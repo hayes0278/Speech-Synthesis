@@ -1,0 +1,12 @@
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\bin\Release\net8.0\SpeechSynthesis.ClassLibrary.deps.json
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\bin\Release\net8.0\SpeechSynthesis.ClassLibrary.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\bin\Release\net8.0\SpeechSynthesis.ClassLibrary.pdb
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.AssemblyInfoInputs.cache
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.AssemblyInfo.cs
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.sourcelink.json
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\refint\SpeechSynthesis.ClassLibrary.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.pdb
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\ref\SpeechSynthesis.ClassLibrary.dll
