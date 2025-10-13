@@ -1,0 +1,6 @@
+@SpeechSynthesis.WebAPI_HostAddress = https://localhost:7021
+
+GET {{LanguageTranslator.WebAPI_HostAddress}}/speechsynthesis/
+Accept: application/json
+
+###
