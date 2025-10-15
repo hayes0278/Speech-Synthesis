@@ -3,6 +3,30 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Speech Synthesis</h1>
+    <p>A lightweight speech synthesis web tool.</p>
+</div>
+
+<div class="text-left">
+    <p>
+        <form id="" name="" action="" method="get">
+            <p>
+                <label for="selVoice">Voice:</label>
+                <select id="selVoice" name="selVoice">
+                    <option value="en-us">Man</option>
+                    <option value="fr-fr">French</option>
+                    <option value="">Spanish</option>
+                    <option value="">German</option>
+                </select>
+            </p>
+            <p>
+                <textarea id="txtInput" name="txtInput" rows="4" cols="50">Enter text to synthesise.</textarea>
+            </p>
+
+            <p>
+                <input type="submit" id="btnSubmit" name="" value="Synthesise" />
+                <input type="reset" id="btnReset" name="" value="Start Again" />
+            </p>
+        </form>
+    </p>
 </div>

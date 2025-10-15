@@ -10,8 +10,9 @@ A lightweight speech synthesis web tool written in C#.
 - UI supports English, Spanish, French and German.
 
 ## Screenshots
+![Screenshot 1](http://url/to/img.png)
 
-
+![Screenshot 2](http://url/to/img.png)
 
 ## Live Demo
 
