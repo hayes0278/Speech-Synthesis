@@ -9,12 +9,12 @@ A lightweight speech synthesis web tool written in C#.
 - UI supports English, Spanish, French and German.
 
 ## Screenshots
-![Screenshot 1](http://url/to/img.png)
+![Screenshot 1](https://github.com/hayes0278/Speech-Synthesis/blob/37863ce0be22f7318e1dee002e2732295bd7e1b7/Media/Screenshots/HomePage.png)
 
-![Screenshot 2](http://url/to/img.png)
+![Screenshot 2](https://github.com/hayes0278/Speech-Synthesis/blob/main/Media/Screenshots/APIHome.png)
 
 ## Live Demo
-View the project [Live Demonstration](https://cmhva.com/projects/speech).
+View the project [Live Demonstration](https://speech.cmhva.com/).
 
 ## Source Code
 View the project [Source Code](https://github.com/hayes0278/Speech-Synthesis).
