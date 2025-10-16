@@ -4,7 +4,7 @@ A lightweight speech synthesis web tool written in C#.
 ## Features
 - Adjust the voice default volume.
 - Switch voices used.
-- Change the voice speed.
+- Change the voice rate of speed.
 - Includes a REST based API.
 - UI supports English, Spanish, French and German.
 

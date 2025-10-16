@@ -1,3 +1,5 @@
+using SpeechSynthesis.ClassLibrary;
+
 namespace SpeechSynthesis.NUnutTests
 {
     public class Speech_Tests

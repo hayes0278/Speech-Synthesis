@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpeechSynthesis.WebApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37863ce0be22f7318e1dee002e2732295bd7e1b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f660d4bb0eeaac6ed5a04d3b75c49586fa8edb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpeechSynthesis.WebApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpeechSynthesis.WebApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

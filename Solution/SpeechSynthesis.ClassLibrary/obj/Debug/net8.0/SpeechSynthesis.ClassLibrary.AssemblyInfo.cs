@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpeechSynthesis.ClassLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d83252d6e46542f299e2e836083daa7f143b189")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f660d4bb0eeaac6ed5a04d3b75c49586fa8edb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpeechSynthesis.ClassLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpeechSynthesis.ClassLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

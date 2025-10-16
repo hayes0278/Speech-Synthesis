@@ -1,3 +1,5 @@
+using SpeechSynthesis.ClassLibrary;
+
 namespace SpeechSynthesis.NUnutTests
 {
     public class Tests
@@ -5,30 +7,45 @@ namespace SpeechSynthesis.NUnutTests
         [SetUp]
         public void Setup()
         {
-
+            SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
         }
 
         [Test]
-        public void SpeakTextInputTest()
+        public void SpeakTextInput_Test()
         {
-            Assert.Pass();
+            SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
+            bool expectedResult = true;
+            bool actualResult = speechApp.SpeakTextInput("Testing Speech Synthesis App");
+            if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
         [Test]
-        public void Test2()
+        public void ChangeVolumeLevel_Test()
         {
-            Assert.Pass();
+            SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
+            speechApp.Volume = 20;
+            int expectedResult = 20;
+            int actualResult = speechApp.Volume;
+            if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
         [Test]
-        public void Test3()
+        public void ChangeRateLevel_Test()
         {
-            Assert.Pass();
+            SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
+            speechApp.Rate = -3;
+            int expectedResult = -3;
+            int actualResult = speechApp.Rate;
+            if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
         [Test]
-        public void Test4()
+        public void ChangeSpeakerVoice_Test()
         {
+            SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
+            string expectedResult = "Female";
+            string actualResult = speechApp.SpeakerVoice;
+            if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
             Assert.Pass();
         }
     }
