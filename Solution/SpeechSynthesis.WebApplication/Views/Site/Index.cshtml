@@ -9,24 +9,35 @@
 
 <div class="text-left">
     <p>
-        <form id="" name="" action="" method="get">
+        <form id="frmSpeechSynthesis" name="frmSpeechSynthesis" action="" method="Get">
             <p>
                 <label for="selVoice">Voice:</label>
                 <select id="selVoice" name="selVoice">
-                    <option value="en-us">Man</option>
-                    <option value="fr-fr">French</option>
-                    <option value="">Spanish</option>
-                    <option value="">German</option>
+                    <option value="man">Man</option>
+                    <option value="woman">Woman</option>
+                    <option value="young">Young</option>
+                    <option value="old">Old</option>
                 </select>
             </p>
             <p>
-                <textarea id="txtInput" name="txtInput" rows="4" cols="50">Enter text to synthesise.</textarea>
+                <label for="selSpeed">Speed:</label>
+                <input type="range" id="selSpeed" name="selSpeed" min="-10" max="10"> 0
+            </p>
+            <p>
+                <label for="txtInput">Text to Speak:</label><br />
+                <textarea id="txtInput" name="txtInput" rows="5" cols="60"></textarea>
             </p>
 
             <p>
-                <input type="submit" id="btnSubmit" name="" value="Synthesise" />
-                <input type="reset" id="btnReset" name="" value="Start Again" />
+                <label for="selVolume">Volume:</label>
+                <input type="range" id="selVolume" name="selVolume" min="0" max="100"> 60
+            </p>
+
+            <p>
+                <input type="submit" id="btnSubmit" name="btnSubmit" value="Synthesise" />
+                <input type="reset" id="btnReset" name="btnReset" value="Start Again" />
             </p>
         </form>
     </p>
 </div>
+<script>const textField = document.getElementById("txtInput"); textField.focus();</script>

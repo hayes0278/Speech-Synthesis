@@ -75,3 +75,7 @@ C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debu
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSy.C8B6C5FB.Up2Date
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\SpeechSynthesis.ClassLibrary.dll
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\SpeechSynthesis.ClassLibrary.pdb
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\System.Speech.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Speech.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Resource-es-ES.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.csproj.GenerateResource.cache

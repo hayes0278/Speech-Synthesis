@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Fq2gl2GREIM=",
+  "dgSpecHash": "m5if83J+Eqo=",
   "success": true,
   "projectFilePath": "C:\\Code\\GitHub\\Speech-Synthesis\\Solution\\SpeechSynthesis.ClassLibrary\\SpeechSynthesis.ClassLibrary.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marsh\\.nuget\\packages\\system.speech\\9.0.10\\system.speech.9.0.10.nupkg.sha512"
+  ],
   "logs": []
 }

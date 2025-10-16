@@ -22,3 +22,4 @@ C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.ClassLibrary\obj\Releas
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\refint\SpeechSynthesis.ClassLibrary.dll
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.pdb
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\ref\SpeechSynthesis.ClassLibrary.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.ClassLibrary\obj\Release\net8.0\SpeechSynthesis.ClassLibrary.csproj.AssemblyReference.cache

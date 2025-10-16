@@ -22,6 +22,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Site" asp-action="Index">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Site" asp-action="Help">Help</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -35,13 +38,14 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - Speech Synthesis - <a asp-area="" asp-controller="Site" asp-action="Privacy">Privacy</a>
-                 - <label for="uiLanguage">Language:</label>
+            &copy; 2025 - Speech Synthesis | <a asp-area="" asp-controller="Site" asp-action="Privacy">Privacy</a> | 
+            <a asp-area="" asp-controller="Site" asp-action="Help">Help</a> || 
+                 --- <label for="uiLanguage">Language:</label>
             <select id="uiLanguage" name="uiLanguage">
                     <option value="en-us">English</option>
                     <option value="fr-fr">French</option>
-                    <option value="">Spanish</option>
-                    <option value="">German</option>
+                    <option value="de-de">German</option>
+                    <option value="es-es">Spanish</option>
                 </select>
         </div>
     </footer>
