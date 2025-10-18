@@ -79,3 +79,7 @@ C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debu
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Speech.dll
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Resource-es-ES.resources
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.csproj.GenerateResource.cache
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_de-de.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_en-us.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_es-es.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_fr-fr.resources

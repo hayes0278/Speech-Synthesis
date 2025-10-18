@@ -24,11 +24,17 @@ namespace SpeechSynthesis.WebApplication.Controllers
             if (formProcessed != null && formProcessed.ToLower() == "synthesise")
             {
                 string testText = "Testing the speech synthesis app.";
-                string inputText = Request.Query["txtInput"];
+                string inputText = Request.Query["selVoice"];
+                string selectVoice = Request.Query["txtInput"];
 
                 if (string.IsNullOrEmpty(inputText))
                 {
                     inputText = testText;
+                }
+
+                if (!string.IsNullOrEmpty(selectVoice))
+                {
+                    selectVoice = selectVoice;
                 }
 
                 SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
@@ -43,12 +49,6 @@ namespace SpeechSynthesis.WebApplication.Controllers
                 {
                     speechApp.Rate = voiceSpeed;
                     ViewBag.Rate = voiceSpeed;
-                }
-
-                foreach (InstalledVoice voice in speechApp.GetInstalledVoices())
-                {
-                    VoiceInfo info = voice.VoiceInfo;
-                    Console.WriteLine("Voice Name: " + info.Name);
                 }
 
                 bool isSuccessful = speechApp.SpeakTextInput(inputText);

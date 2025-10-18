@@ -8,7 +8,7 @@ namespace SpeechSynthesis.ClassLibrary
         #region fields
 
         private string _inputText;
-        private string _speakerVoice = "male";
+        private string _speakerVoice = "Microsoft David Desktop";
         private string[] _speakerVoiceOptions;
         private int _volume = 50;
         private int _rate = 0;
@@ -32,7 +32,7 @@ namespace SpeechSynthesis.ClassLibrary
                     {
                         int i = 0;
                         VoiceInfo info = voice.VoiceInfo;
-                        _speakerVoiceOptions[i] = info.Name;
+                        //_speakerVoiceOptions[i] = info.Name;  // for dropdown list
                         Console.WriteLine(info.Name);
                         i++;
                     }  
@@ -41,6 +41,7 @@ namespace SpeechSynthesis.ClassLibrary
 
                     synthesizer.Volume = _volume;   // 0-100
                     synthesizer.Rate = _rate;       // -10 to 10
+                    synthesizer.SelectVoice(_speakerVoice);
 
                     // Speak the text
                     synthesizer.Speak(_inputText);
