@@ -9,6 +9,7 @@ namespace SpeechSynthesis.ClassLibrary
 
         private string _inputText;
         private string _speakerVoice = "male";
+        private string[] _speakerVoiceOptions;
         private int _volume = 50;
         private int _rate = 0;
 
@@ -22,11 +23,19 @@ namespace SpeechSynthesis.ClassLibrary
         public bool SpeakTextInput(string input)
         {
             _inputText = input.Trim();
+
             using (SpeechSynthesizer synthesizer = new SpeechSynthesizer())
             {
                 try
                 {
-                    synthesizer.GetInstalledVoices();
+                    foreach (InstalledVoice voice in synthesizer.GetInstalledVoices())
+                    {
+                        int i = 0;
+                        VoiceInfo info = voice.VoiceInfo;
+                        _speakerVoiceOptions[i] = info.Name;
+                        Console.WriteLine(info.Name);
+                        i++;
+                    }  
 
                     synthesizer.SetOutputToDefaultAudioDevice();
 

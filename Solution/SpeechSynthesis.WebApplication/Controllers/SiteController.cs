@@ -1,6 +1,10 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using SpeechSynthesis.ClassLibrary;
 using SpeechSynthesis.WebApplication.Models;
+using System.Diagnostics;
+using System.Speech.Synthesis;
+using System.Xml.Linq;
 
 namespace SpeechSynthesis.WebApplication.Controllers
 {
@@ -15,6 +19,44 @@ namespace SpeechSynthesis.WebApplication.Controllers
 
         public IActionResult Index()
         {
+            string formProcessed = Request.Query["btnSubmit"];
+
+            if (formProcessed != null && formProcessed.ToLower() == "synthesise")
+            {
+                string testText = "Testing the speech synthesis app.";
+                string inputText = Request.Query["txtInput"];
+
+                if (string.IsNullOrEmpty(inputText))
+                {
+                    inputText = testText;
+                }
+
+                SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
+
+                if (int.TryParse(Request.Query["selVolume"].ToString(), out int voiceVolume))
+                {
+                    speechApp.Volume = voiceVolume;
+                    ViewBag.Volume = voiceVolume;
+                }
+
+                if (int.TryParse(Request.Query["selSpeed"].ToString(), out int voiceSpeed))
+                {
+                    speechApp.Rate = voiceSpeed;
+                    ViewBag.Rate = voiceSpeed;
+                }
+
+                foreach (InstalledVoice voice in speechApp.GetInstalledVoices())
+                {
+                    VoiceInfo info = voice.VoiceInfo;
+                    Console.WriteLine("Voice Name: " + info.Name);
+                }
+
+                bool isSuccessful = speechApp.SpeakTextInput(inputText);
+
+                ViewBag.InputText = inputText;
+
+            }
+
             return View();
         }
 

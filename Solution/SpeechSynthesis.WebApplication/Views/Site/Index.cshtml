@@ -21,7 +21,7 @@
             </p>
             <p>
                 <label for="selSpeed">Speed:</label>
-                <input type="range" id="selSpeed" name="selSpeed" min="-10" max="10"> 0
+                <input type="range" id="selSpeed" name="selSpeed" min="-10" max="10" value="@ViewBag.Rate"> @ViewBag.Rate
             </p>
             <p>
                 <label for="txtInput">Text to Speak:</label><br />
@@ -30,7 +30,7 @@
 
             <p>
                 <label for="selVolume">Volume:</label>
-                <input type="range" id="selVolume" name="selVolume" min="0" max="100"> 60
+                <input type="range" id="selVolume" name="selVolume" min="0" max="100" value="@ViewBag.Volume"> @ViewBag.Volume
             </p>
 
             <p>

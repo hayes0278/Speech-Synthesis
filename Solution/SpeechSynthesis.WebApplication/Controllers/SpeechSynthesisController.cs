@@ -21,7 +21,7 @@ namespace SpeechSynthesis.WebApplication.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetLanguageTranslation")]
+        [HttpGet(Name = "GetSpeechSynthesis")]
         public IEnumerable<Speech> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new Speech

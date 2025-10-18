@@ -10,7 +10,7 @@
         "tags": [
           "SpeechSynthesis"
         ],
-        "operationId": "GetLanguageTranslation",
+        "operationId": "GetSpeechSynthesis",
         "responses": {
           "200": {
             "description": "OK",

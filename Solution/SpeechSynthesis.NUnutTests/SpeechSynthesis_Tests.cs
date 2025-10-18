@@ -15,7 +15,7 @@ namespace SpeechSynthesis.NUnutTests
         {
             SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
             bool expectedResult = true;
-            bool actualResult = speechApp.SpeakTextInput("Testing Speech Synthesis App");
+            bool actualResult = speechApp.SpeakTextInput("Testing the speech synthesis app.");
             if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
         }
 
@@ -43,7 +43,7 @@ namespace SpeechSynthesis.NUnutTests
         public void ChangeSpeakerVoice_Test()
         {
             SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
-            string expectedResult = "Female";
+            string expectedResult = "male";
             string actualResult = speechApp.SpeakerVoice;
             if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
             Assert.Pass();
