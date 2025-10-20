@@ -24,12 +24,13 @@ namespace SpeechSynthesis.WebApplication.Controllers
             if (formProcessed != null && formProcessed.ToLower() == "synthesise")
             {
                 string testText = "Testing the speech synthesis app.";
-                string inputText = Request.Query["selVoice"];
-                string selectVoice = Request.Query["txtInput"];
+                string inputText = Request.Query["txtInput"];
+                string selectVoice = Request.Query["selVoice"];
 
                 if (string.IsNullOrEmpty(inputText))
                 {
                     inputText = testText;
+                    ViewBag.InputText = inputText;
                 }
 
                 if (!string.IsNullOrEmpty(selectVoice))
@@ -43,15 +44,21 @@ namespace SpeechSynthesis.WebApplication.Controllers
                 {
                     speechApp.Volume = voiceVolume;
                     ViewBag.Volume = voiceVolume;
+                } else
+                {
+                    ViewBag.Volume = 50;
                 }
 
                 if (int.TryParse(Request.Query["selSpeed"].ToString(), out int voiceSpeed))
                 {
                     speechApp.Rate = voiceSpeed;
                     ViewBag.Rate = voiceSpeed;
+                } else
+                {
+                    ViewBag.Rate = 0;
                 }
 
-                bool isSuccessful = speechApp.SpeakTextInput(inputText);
+                bool isSuccessful = speechApp.SpeakTextInput(inputText, selectVoice);
 
                 ViewBag.InputText = inputText;
 

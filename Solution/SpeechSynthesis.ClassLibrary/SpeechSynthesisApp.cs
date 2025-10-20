@@ -7,9 +7,9 @@ namespace SpeechSynthesis.ClassLibrary
     {
         #region fields
 
-        private string _inputText;
+        private string? _inputText;
         private string _speakerVoice = "Microsoft David Desktop";
-        private string[] _speakerVoiceOptions;
+        private string[]? _speakerVoiceOptions;
         private int _volume = 50;
         private int _rate = 0;
 
@@ -20,18 +20,19 @@ namespace SpeechSynthesis.ClassLibrary
         #endregion
 
         #region public methods
-        public bool SpeakTextInput(string input)
+        public bool SpeakTextInput(string input, string voice)
         {
             _inputText = input.Trim();
+            _speakerVoice = voice.Trim();
 
             using (SpeechSynthesizer synthesizer = new SpeechSynthesizer())
             {
                 try
                 {
-                    foreach (InstalledVoice voice in synthesizer.GetInstalledVoices())
+                    foreach (InstalledVoice voiceObj in synthesizer.GetInstalledVoices())
                     {
                         int i = 0;
-                        VoiceInfo info = voice.VoiceInfo;
+                        VoiceInfo info = voiceObj.VoiceInfo;
                         //_speakerVoiceOptions[i] = info.Name;  // for dropdown list
                         Console.WriteLine(info.Name);
                         i++;

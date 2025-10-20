@@ -16,6 +16,7 @@
                     <option value="Microsoft David Desktop">Microsoft David Desktop</option>
                     <option value="Microsoft Zira Desktop"">Microsoft Zira Desktop</option>
                     <option value="Microsoft Helena Desktop">Microsoft Helena Desktop</option>
+                    <option value="Microsoft Hortense Desktop">Microsoft Hortense Desktop</option>
                 </select>
             </p>
             <p>
@@ -24,7 +25,7 @@
             </p>
             <p>
                 <label for="txtInput">Text to Speak:</label><br />
-                <textarea id="txtInput" name="txtInput" rows="5" cols="60"></textarea>
+                <textarea id="txtInput" name="txtInput" rows="5" cols="60" onclick="javascript: this.value='';">@ViewBag.InputText</textarea>
             </p>
 
             <p>
@@ -34,7 +35,7 @@
 
             <p>
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Synthesise" />
-                <input type="reset" id="btnReset" name="btnReset" value="Start Again" />
+                <input type="reset" id="btnReset" name="btnReset" value="Start Again" onclick="javascript:document.location.ahref = '/';" />
             </p>
         </form>
     </p>

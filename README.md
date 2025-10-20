@@ -25,5 +25,12 @@ View the project [Source Code](https://github.com/hayes0278/Speech-Synthesis).
 - Select the spoken voice desired, the default is ???.
 - Take the input and generate the voice response.
 
+## Helpful Links
+- [Development URL](https://localhost:0000)
+- [Swagger URL](https://localhost/swagger)
+- ![]()
+- ![]()
+- ![]()
+
 ## Limitations
 - There is minimal input checking and sanitation performed either client or server side.

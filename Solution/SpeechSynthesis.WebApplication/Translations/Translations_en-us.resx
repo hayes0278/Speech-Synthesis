@@ -117,13 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="help" xml:space="preserve">
+    <value>Help</value>
+    <comment>Help</comment>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>Home</value>
+    <comment>Home</comment>
+  </data>
+  <data name="privacy" xml:space="preserve">
+    <value>Privacy</value>
+    <comment>Privacy</comment>
+  </data>
   <data name="speech_synthesis" xml:space="preserve">
     <value>Speech Synthesis</value>
     <comment>Speech Synthesis</comment>
   </data>
-  <data name="start_over" xml:space="preserve">
-    <value>Start Over</value>
-    <comment>Start Over</comment>
+  <data name="speed" xml:space="preserve">
+    <value>Speed</value>
+    <comment>Speed</comment>
+  </data>
+  <data name="start_again" xml:space="preserve">
+    <value>Start Again</value>
+    <comment>Start Again</comment>
+  </data>
+  <data name="Synthesize" xml:space="preserve">
+    <value>Synthesize</value>
+    <comment>Synthesize</comment>
+  </data>
+  <data name="testing_the_speech_synthesis_app" xml:space="preserve">
+    <value>Testing the speech synthesis app.</value>
+    <comment>Testing the speech synthesis app.</comment>
+  </data>
+  <data name="test_to_speak" xml:space="preserve">
+    <value>Test to Speak</value>
+    <comment>Test to Speak</comment>
+  </data>
+  <data name="volume" xml:space="preserve">
+    <value>Volume</value>
+    <comment>Volume</comment>
   </data>
   <data name="welcome_to" xml:space="preserve">
     <value>Welcome To</value>

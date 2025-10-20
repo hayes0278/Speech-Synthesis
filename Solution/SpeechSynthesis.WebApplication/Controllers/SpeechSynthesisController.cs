@@ -22,11 +22,11 @@ namespace SpeechSynthesis.WebApplication.Controllers
         }
 
         [HttpGet(Name = "GetSpeechSynthesis")]
-        public IEnumerable<Speech> Get()
+        public IEnumerable<Voice> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new Speech
+            return Enumerable.Range(1, Summaries.Length).Select(index => new Voice
             {
-                InputText = Summaries[Random.Shared.Next(Summaries.Length)]
+                Name = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
         }
