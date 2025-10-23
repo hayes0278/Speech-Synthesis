@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Localization;
 using SpeechSynthesis.ClassLibrary;
 using SpeechSynthesis.WebApplication.Models;
 using System.Diagnostics;
+using System.Resources;
 using System.Speech.Synthesis;
 using System.Xml.Linq;
 
@@ -10,11 +12,11 @@ namespace SpeechSynthesis.WebApplication.Controllers
 {
     public class SiteController : Controller
     {
-        private readonly ILogger<SiteController> _logger;
+        private readonly IStringLocalizer<SiteController> _localizer;
 
-        public SiteController(ILogger<SiteController> logger)
+        public SiteController(IStringLocalizer<SiteController> localizer)
         {
-            _logger = logger;
+            _localizer = localizer;
         }
 
         public IActionResult Index()
@@ -61,7 +63,7 @@ namespace SpeechSynthesis.WebApplication.Controllers
                 bool isSuccessful = speechApp.SpeakTextInput(inputText, selectVoice);
 
                 ViewBag.InputText = inputText;
-
+                ViewBag.SampleTranslationTest = _localizer["all_rights_reserved"].Value;
             }
 
             return View();

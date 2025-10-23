@@ -27,7 +27,9 @@
                 <label for="txtInput">Text to Speak:</label><br />
                 <textarea id="txtInput" name="txtInput" rows="5" cols="60" onclick="javascript: this.value='';">@ViewBag.InputText</textarea>
             </p>
-
+            <p>
+                @ViewBag.SampleTranslationTest
+            </p>
             <p>
                 <label for="selVolume">Volume:</label>
                 <input type="range" id="selVolume" name="selVolume" min="0" max="100" value="@ViewBag.Volume"> @ViewBag.Volume

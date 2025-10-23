@@ -83,3 +83,15 @@ C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debu
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_en-us.resources
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_es-es.resources
 C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Translations.Translations_fr-fr.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Resources.SharedResources..de-de.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Resources.SharedResources..en-us.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Resources.SharedResources..es-es.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\SpeechSynthesis.WebApplication.Resources.SharedResources..fr-fr.resources
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\de-de\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\en-us\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\es-es\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\bin\Debug\net8.0\fr-fr\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\de-de\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\en-us\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\es-es\SpeechSynthesis.WebApplication.resources.dll
+C:\Code\GitHub\Speech-Synthesis\Solution\SpeechSynthesis.WebApplication\obj\Debug\net8.0\fr-fr\SpeechSynthesis.WebApplication.resources.dll
