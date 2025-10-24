@@ -32,8 +32,9 @@ namespace SpeechSynthesis.WebApplication.Controllers
                 if (string.IsNullOrEmpty(inputText))
                 {
                     inputText = testText;
-                    ViewBag.InputText = inputText;
                 }
+                
+                ViewBag.InputText = inputText;
 
                 if (!string.IsNullOrEmpty(selectVoice))
                 {
@@ -61,21 +62,10 @@ namespace SpeechSynthesis.WebApplication.Controllers
                 }
 
                 bool isSuccessful = speechApp.SpeakTextInput(inputText, selectVoice);
-
-                ViewBag.InputText = inputText;
-                ViewBag.SampleTranslationTest = _localizer["all_rights_reserved"].Value;
+                
+                ViewBag.SampleTranslationTest = _localizer["all_rights_reserved"];
             }
 
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Help()
-        {
             return View();
         }
 

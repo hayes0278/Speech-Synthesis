@@ -9,12 +9,9 @@ A lightweight speech synthesis web tool written in C#.
 - UI supports English, Spanish, French and German.
 
 ## Screenshots
-![Screenshot 1](https://github.com/hayes0278/Speech-Synthesis/blob/37863ce0be22f7318e1dee002e2732295bd7e1b7/Media/Screenshots/HomePage.png)
+![Screenshot 1](Media/Screenshots/HomePage.png)
 
-![Screenshot 2](https://github.com/hayes0278/Speech-Synthesis/blob/main/Media/Screenshots/APIHome.png)
-
-## Live Demo
-View the project [Live Demonstration](https://speech.cmhva.com/).
+![Screenshot 2](Media/Screenshots/APIHome.png)
 
 ## Source Code
 View the project [Source Code](https://github.com/hayes0278/Speech-Synthesis).
@@ -22,15 +19,17 @@ View the project [Source Code](https://github.com/hayes0278/Speech-Synthesis).
 ## How It Works
 - User enters text to synthesize, default is Test.
 - Select the user interface language, default is English.
-- Select the spoken voice desired, the default is ???.
+- Select the spoken voice desired, the default is Microsoft David Desktop.
 - Take the input and generate the voice response.
 
 ## Helpful Links
-- [Development URL](https://localhost:0000)
-- [Swagger URL](https://localhost/swagger)
-- ![]()
-- ![]()
-- ![]()
+- [Development URL](https://localhost:7021)
+- [Swagger URL](https://localhost:7021/swagger)
 
 ## Limitations
-- There is minimal input checking and sanitation performed either client or server side.
+- There is no input checking and sanitation performed either client or server side.
+- 
+
+## Retrospective
+- 
+- 

@@ -6,12 +6,13 @@
     <h1 class="display-4">Speech Synthesis</h1>
     <p>A lightweight speech synthesis web tool.</p>
 </div>
-
+<p></p>
+<p></p>
 <div class="text-left">
     <p>
-        <form id="frmSpeechSynthesis" name="frmSpeechSynthesis" action="" method="Get">
+        <form id="frmSpeechSynthesis" name="frmSpeechSynthesis" action="/" method="get">
             <p>
-                <label for="selVoice">Voice:</label>
+                <label for="selVoice">Voice Actor:</label>
                 <select id="selVoice" name="selVoice">
                     <option value="Microsoft David Desktop">Microsoft David Desktop</option>
                     <option value="Microsoft Zira Desktop"">Microsoft Zira Desktop</option>
@@ -20,26 +21,43 @@
                 </select>
             </p>
             <p>
-                <label for="selSpeed">Speed:</label>
-                <input type="range" id="selSpeed" name="selSpeed" min="-10" max="10" value="@ViewBag.Rate"> @ViewBag.Rate
+                <label for="selRate">Rate of Speech:</label>
+                <input type="range" id="selRate" name="selRate" min="-10" max="10" value="@ViewBag.Rate"> <span id="rateValue">@ViewBag.Rate</span>
+
             </p>
             <p>
                 <label for="txtInput">Text to Speak:</label><br />
-                <textarea id="txtInput" name="txtInput" rows="5" cols="60" onclick="javascript: this.value='';">@ViewBag.InputText</textarea>
+                <textarea id="txtInput" name="txtInput" rows="5" cols="50" onclick="javascript: this.value='';">@ViewBag.InputText</textarea>
             </p>
+            
             <p>
-                @ViewBag.SampleTranslationTest
-            </p>
-            <p>
-                <label for="selVolume">Volume:</label>
-                <input type="range" id="selVolume" name="selVolume" min="0" max="100" value="@ViewBag.Volume"> @ViewBag.Volume
+                <label for="selVolume">Speech Volume:</label>
+                <input type="range" id="selVolume" name="selVolume" min="0" max="100" value="@ViewBag.Volume"> <span id="volumeValue">@ViewBag.Volume</span>
             </p>
 
             <p>
                 <input type="submit" id="btnSubmit" name="btnSubmit" value="Synthesise" />
-                <input type="reset" id="btnReset" name="btnReset" value="Start Again" onclick="javascript:document.location.ahref = '/';" />
+                <input type="reset" id="btnReset" name="btnReset" value="Start Again" onclick="replaceCurrentPage('/');" />
             </p>
         </form>
     </p>
+    
 </div>
-<script>const textField = document.getElementById("txtInput"); textField.focus();</script>
+<script>
+    const textField = document.getElementById("txtInput"); textField.focus();
+    
+    const sliderRate = document.getElementById("selRate")
+    const sliderRateValue = document.getElementById("rateValue")
+
+    sliderRate.oninput = function() {
+        sliderRateValue.innerHTML = this.value;
+    }
+
+    const sliderVolume = document.getElementById("selVolume")
+    const sliderVolumeValue = document.getElementById("volumeValue")
+
+    sliderVolume.oninput = function() {
+        sliderVolumeValue.innerHTML = this.value;
+    }
+
+</script>
