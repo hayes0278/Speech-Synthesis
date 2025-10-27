@@ -28,6 +28,12 @@ namespace SpeechSynthesis.WebApplication.Controllers
                 string testText = "Testing the speech synthesis app.";
                 string inputText = Request.Query["txtInput"];
                 string selectVoice = Request.Query["selVoice"];
+                string selectOutput = Request.Query["selOuput"];
+
+                if (string.IsNullOrEmpty(selectOutput))
+                {
+                    selectOutput = "Default Output Device";
+                }
 
                 if (string.IsNullOrEmpty(inputText))
                 {
@@ -61,9 +67,9 @@ namespace SpeechSynthesis.WebApplication.Controllers
                     ViewBag.Rate = 0;
                 }
 
-                bool isSuccessful = speechApp.SpeakTextInput(inputText, selectVoice);
+                bool isSuccessful = speechApp.SpeakTextInput(inputText, selectVoice, selectOutput);
                 
-                ViewBag.SampleTranslationTest = _localizer["all_rights_reserved"];
+                ViewBag.AllRightsReserved = _localizer["All rights reserved"];
             }
 
             return View();

@@ -10,7 +10,7 @@
         "tags": [
           "SpeechSynthesis"
         ],
-        "operationId": "GetLanguageTranslation",
+        "operationId": "GetSpeechSynthesis",
         "responses": {
           "200": {
             "description": "OK",
@@ -19,7 +19,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Speech"
+                    "$ref": "#/components/schemas/Voice"
                   }
                 }
               },
@@ -27,7 +27,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Speech"
+                    "$ref": "#/components/schemas/Voice"
                   }
                 }
               },
@@ -35,7 +35,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Speech"
+                    "$ref": "#/components/schemas/Voice"
                   }
                 }
               }
@@ -47,10 +47,14 @@
   },
   "components": {
     "schemas": {
-      "Speech": {
+      "Voice": {
         "type": "object",
         "properties": {
-          "inputText": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
             "type": "string",
             "nullable": true
           }

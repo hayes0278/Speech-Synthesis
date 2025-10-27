@@ -21,8 +21,18 @@ namespace SpeechSynthesis.WebApplication.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetSpeechSynthesis")]
+        [HttpGet(Name = "GetVoices")]
         public IEnumerable<Voice> Get()
+        {
+            return Enumerable.Range(1, Summaries.Length).Select(index => new Voice
+            {
+                Name = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+
+        [HttpPost(Name = "PostSpeechSynthesis")]
+        public IEnumerable<Voice> Post()
         {
             return Enumerable.Range(1, Summaries.Length).Select(index => new Voice
             {

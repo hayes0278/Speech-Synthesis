@@ -10,7 +10,44 @@
         "tags": [
           "SpeechSynthesis"
         ],
-        "operationId": "GetSpeechSynthesis",
+        "operationId": "GetVoices",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Voice"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Voice"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Voice"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SpeechSynthesis"
+        ],
+        "operationId": "PostSpeechSynthesis",
         "responses": {
           "200": {
             "description": "OK",

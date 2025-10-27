@@ -15,7 +15,7 @@ namespace SpeechSynthesis.NUnutTests
         {
             SpeechSynthesisApp speechApp = new SpeechSynthesisApp();
             bool expectedResult = true;
-            bool actualResult = speechApp.SpeakTextInput("Testing the speech synthesis app.", "Microsoft David Desktop");
+            bool actualResult = speechApp.SpeakTextInput("Testing the speech synthesis app.", "Microsoft David Desktop", "Default Ouput");
             if (actualResult == expectedResult) { Assert.Pass(); } else { Assert.Fail(); }
         }
 

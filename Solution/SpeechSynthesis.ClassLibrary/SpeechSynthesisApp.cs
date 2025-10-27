@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using System.Speech.Synthesis;
 
 namespace SpeechSynthesis.ClassLibrary
@@ -9,6 +10,7 @@ namespace SpeechSynthesis.ClassLibrary
 
         private string? _inputText;
         private string _speakerVoice = "Microsoft David Desktop";
+        private string? _outputDevice;
         private string[]? _speakerVoiceOptions;
         private int _volume = 50;
         private int _rate = 0;
@@ -20,10 +22,11 @@ namespace SpeechSynthesis.ClassLibrary
         #endregion
 
         #region public methods
-        public bool SpeakTextInput(string input, string voice)
+        public bool SpeakTextInput(string input, string voice, string output)
         {
             _inputText = input.Trim();
             _speakerVoice = voice.Trim();
+            _outputDevice = output.Trim();
 
             using (SpeechSynthesizer synthesizer = new SpeechSynthesizer())
             {
@@ -37,14 +40,11 @@ namespace SpeechSynthesis.ClassLibrary
                         Console.WriteLine(info.Name);
                         i++;
                     }  
-
-                    synthesizer.SetOutputToDefaultAudioDevice();
-
+                    
                     synthesizer.Volume = _volume;   // 0-100
                     synthesizer.Rate = _rate;       // -10 to 10
                     synthesizer.SelectVoice(_speakerVoice);
 
-                    // Speak the text
                     synthesizer.Speak(_inputText);
 
                     return true;
