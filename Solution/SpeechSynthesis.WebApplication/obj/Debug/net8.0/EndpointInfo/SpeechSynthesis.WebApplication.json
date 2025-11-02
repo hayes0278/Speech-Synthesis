@@ -6,48 +6,73 @@
   },
   "paths": {
     "/SpeechSynthesis": {
-      "get": {
+      "post": {
         "tags": [
           "SpeechSynthesis"
         ],
-        "operationId": "GetVoices",
+        "operationId": "PostSpeechRecognition",
+        "parameters": [
+          {
+            "name": "voice",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "text",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rate",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "volume",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Voice"
-                  }
+                  "type": "string"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Voice"
-                  }
+                  "type": "string"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Voice"
-                  }
+                  "type": "string"
                 }
               }
             }
           }
         }
-      },
-      "post": {
+      }
+    },
+    "/Voices": {
+      "get": {
         "tags": [
-          "SpeechSynthesis"
+          "Voices"
         ],
-        "operationId": "PostSpeechSynthesis",
+        "operationId": "GetVoices",
         "responses": {
           "200": {
             "description": "OK",
@@ -88,10 +113,6 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "region": {
             "type": "string",
             "nullable": true
           }

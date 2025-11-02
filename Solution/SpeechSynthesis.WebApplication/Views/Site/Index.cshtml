@@ -6,8 +6,7 @@
     <h1 class="display-4">Speech Synthesis</h1>
     <p>A lightweight speech synthesis web tool.</p>
 </div>
-<p></p>
-<p></p>
+<div id="mobileShim" name="mobileShim"></div>
 <div class="text-left">
     <p>
         <form id="frmSpeechSynthesis" name="frmSpeechSynthesis" action="/" method="get">
@@ -27,7 +26,7 @@
             </p>
             <p>
                 <label for="txtInput">Text to Speak:</label><br />
-                <textarea id="txtInput" name="txtInput" rows="5" cols="50" onclick="javascript: this.value='';">@ViewBag.InputText</textarea>
+                <textarea id="txtInput" name="txtInput" rows="8" cols="40" onclick="javascript: this.value='';">@ViewBag.InputText</textarea>
             </p>
             
             <p>

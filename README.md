@@ -30,7 +30,3 @@ View the project's [Source Code](https://github.com/hayes0278/Speech-Synthesis).
 - There is no input checking and sanitation performed either client or server side.
 - This project is more Windows server focused, instead of being more platform agnostic.
 - The necessary code to be placed in a production environment is not present.
-
-## Retrospective
-- More domain and platform research should have been completed in the beginning.
-- 
