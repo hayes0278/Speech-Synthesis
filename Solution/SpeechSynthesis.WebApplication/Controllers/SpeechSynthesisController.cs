@@ -1,10 +1,5 @@
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
-using SpeechSynthesis.ClassLibrary;
-using SpeechSynthesis.WebApplication.Models;
-using System.Diagnostics;
 using System.Speech.Synthesis;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SpeechSynthesis.WebApplication.Controllers
 {

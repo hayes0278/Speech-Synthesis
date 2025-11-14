@@ -1,12 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Localization;
 using SpeechSynthesis.ClassLibrary;
 using SpeechSynthesis.WebApplication.Models;
 using System.Diagnostics;
-using System.Resources;
-using System.Speech.Synthesis;
-using System.Xml.Linq;
 
 namespace SpeechSynthesis.WebApplication.Controllers
 {

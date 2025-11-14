@@ -8,11 +8,6 @@ A lightweight speech synthesis web tool written in C#.
 - Enter custom text to speak.
 - Includes a REST based API for remote calls.
 
-## Screenshots
-![Screenshot 1](Media/Screenshots/HomePage.png)
-
-![Screenshot 2](Media/Screenshots/APIHome.png)
-
 ## Source Code
 View the project's [Source Code](https://github.com/hayes0278/Speech-Synthesis).
 
@@ -30,3 +25,10 @@ View the project's [Source Code](https://github.com/hayes0278/Speech-Synthesis).
 - There is no input checking and sanitation performed either client or server side.
 - This project is more Windows server focused, instead of being more platform agnostic.
 - The necessary code to be placed in a production environment is not present.
+
+## Screenshots
+![Home Page Screenshot](Media/Screenshots/HomePage.png)
+
+![API Screenshot](Media/Screenshots/APIHome.png)
+
+![Mobile Page Screenshot](Media/Screenshots/MobilePage.png)

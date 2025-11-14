@@ -1,7 +1,5 @@
-using System.Diagnostics;
 using SpeechSynthesis.ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
-using SpeechSynthesis.WebApplication.Models;
 
 namespace SpeechSynthesis.WebApplication.Controllers
 {

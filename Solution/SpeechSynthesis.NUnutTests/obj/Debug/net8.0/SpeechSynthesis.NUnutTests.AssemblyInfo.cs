@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpeechSynthesis.NUnutTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b434f6c6e718e9bef8190191d90b6b28d331eac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f8ae4e8dad86044e8933ba1a807f6b108aa2a16")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpeechSynthesis.NUnutTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpeechSynthesis.NUnutTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

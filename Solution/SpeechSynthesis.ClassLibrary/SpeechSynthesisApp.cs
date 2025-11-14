@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq.Expressions;
-using System.Speech.Synthesis;
+﻿using System.Speech.Synthesis;
 
 namespace SpeechSynthesis.ClassLibrary
 {
