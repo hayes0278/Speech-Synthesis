@@ -2,7 +2,6 @@
 A lightweight speech synthesis web tool written in C#. 
 
 ## Features
-- Adjust the voice default volume.
 - Switch spoken voices being used.
 - Change the voice rate of speed.
 - Enter custom text to speak.

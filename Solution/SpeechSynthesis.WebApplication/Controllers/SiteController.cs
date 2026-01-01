@@ -17,13 +17,13 @@ namespace SpeechSynthesis.WebApplication.Controllers
 
         public IActionResult Index()
         {
-            string formProcessed = Request.Query["btnSubmit"];
+            string? formProcessed = Request.Query["btnSubmit"];
 
             if (formProcessed != null && formProcessed.ToLower() == "synthesise")
             {
                 string testText = "Testing the speech synthesis app.";
-                string inputText = Request.Query["txtInput"]; inputText.Trim();
-                string selectVoice = Request.Query["selVoice"]; selectVoice.Trim();
+                string? inputText = Request.Query["txtInput"]; inputText.Trim();
+                string? selectVoice = Request.Query["selVoice"]; selectVoice.Trim();
 
                 if (string.IsNullOrEmpty(inputText))
                 {
@@ -59,6 +59,8 @@ namespace SpeechSynthesis.WebApplication.Controllers
 
                 bool isSuccessful = speechApp.SpeakTextInput(inputText, selectVoice);
                 
+                ViewBag.Title = _localizer["Speech Synthesis"];
+                ViewBag.TagLine = _localizer["A lightweight speech synthesis web tool."];
                 ViewBag.AllRightsReserved = _localizer["All rights reserved"];
             }
 

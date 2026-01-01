@@ -1,5 +1,6 @@
-using SpeechSynthesis.ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using SpeechSynthesis.ClassLibrary;
 
 namespace SpeechSynthesis.WebApplication.Controllers
 {
@@ -13,10 +14,12 @@ namespace SpeechSynthesis.WebApplication.Controllers
         };
 
         private readonly ILogger<VoicesController> _logger;
+        private readonly IStringLocalizer<VoicesController> _localizer;
 
-        public VoicesController(ILogger<VoicesController> logger)
+        public VoicesController(ILogger<VoicesController> logger, IStringLocalizer<VoicesController> localizer)
         {
             _logger = logger;
+            _localizer = localizer;
         }
 
         [HttpGet(Name = "GetVoices")]

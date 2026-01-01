@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using System.Speech.Synthesis;
 
 namespace SpeechSynthesis.WebApplication.Controllers
@@ -13,10 +14,12 @@ namespace SpeechSynthesis.WebApplication.Controllers
         };
 
         private readonly ILogger<SpeechSynthesisController> _logger;
+        private readonly IStringLocalizer<VoicesController> _localizer;
 
-        public SpeechSynthesisController(ILogger<SpeechSynthesisController> logger)
+        public SpeechSynthesisController(ILogger<SpeechSynthesisController> logger, IStringLocalizer<VoicesController> localizer)
         {
             _logger = logger;
+            _localizer = localizer;
         }
 
         [HttpPost(Name = "PostSpeechRecognition")]
